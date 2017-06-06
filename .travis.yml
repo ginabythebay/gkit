@@ -1,8 +1,13 @@
 language: go
+
 go:
   - 1.6
   - 1.8.1
   - tip
+
+install:
+  go get -u google.golang.org/appengine/...
+
 script:
   - go version
   - go install ./...
